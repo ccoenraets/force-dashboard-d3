@@ -1,0 +1,240 @@
+h1 {
+    font-family: 'Segoe UI Light', 'Helvetica Neue Light', 'Segoe UI', 'Helvetica Neue', 'Trebuchet MS', Verdana;
+    font-weight: 200;
+    font-size: 20px;
+    cursor: default;
+}
+
+#left-nav {
+    position: absolute;
+    width: 280px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    background: #484B4C;
+    border-right: solid 1px #000;
+    color: #ddd;
+}
+
+#left-nav > .welcome {
+    padding: 12px 12px 30px 12px;
+}
+
+#left-nav > .list > li {
+    border-bottom: solid 1px #444;
+    padding: 8px;
+}
+
+.list-item:not(:first-of-type) {
+    border-top: solid 1px #555;
+}
+
+#left-nav > .list > .list-item h3 {
+    margin: 0px;
+    font-size: 16px;
+    color: #e5e5e5;
+}
+
+#left-nav > .list > .list-item p {
+    margin: 0px;
+}
+
+#left-nav > .list > li:active {
+    background-color: #393939;
+}
+
+#left-nav > .title {
+    padding: 4px;
+}
+
+#left-nav i {
+    font-size: 28px;
+    float: left;
+    margin-right: 8px;
+    width: 28px;
+}
+
+#container {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+#container.offset {
+    -webkit-transform: translate3d(280px, 0, 0);
+    transform: translate3d(280px, 0, 0);
+}
+
+#container.transition {
+    -webkit-transition-duration: .25s;
+    transition-duration: .25s;
+}
+
+#content {
+    position: absolute;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    top: 44px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: #ffffff;
+}
+
+.widget {
+    position: relative;
+    /*font-family: Helvetica, Arial, Verdana, sans-serif;*/
+    /*font-size: 12px;*/
+    width: 490px;
+    height: 355px;
+    float: left;
+    overflow: hidden;
+    padding: 12px;
+}
+
+.chart {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.chart>.title {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    height: 34px;
+    font-family: 'Segoe UI Light', 'Helvetica Neue Light', 'Segoe UI', 'Helvetica Neue', 'Trebuchet MS', Verdana;
+    font-weight: 200;
+    font-size: 24px;
+    padding-bottom: 8px;
+}
+
+#name.title {
+    font-size: 19px;
+}
+
+.chart>.graph {
+    display: table-row;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.widget>.empty {
+    color: #bbb;
+    text-align: center;
+    width: 100%;
+    padding: 130px 90px;
+}
+
+
+.widget.full-width {
+    width: 980px;
+}
+
+.widget.full-height {
+    height: 710px;
+}
+
+.widget.one-third {
+    width: 392px;
+}
+
+.widget.two-thirds {
+    width: 588px;
+}
+
+.card.tooltip {
+    position: absolute;
+    top: 280px;
+    left: 300px;
+    background: yellow !important;
+    opacity: .1;
+    opacity: 0;
+}
+
+#gauge {
+    width: 250px;
+    height: 140px;
+    margin: 0 auto;
+}
+
+
+#closeDate,
+#owner {
+    color: #999;
+}
+
+
+.empty i {
+    font-size: 36px;
+}
+
+.chart rect {
+    stroke: #ffa500;
+    fill: #ffa500;
+}
+
+.chart.color2 rect {
+    stroke: #557781;
+    fill: #557781;
+}
+
+text {
+    fill: #777 !important;
+    font-size: 12px !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; !important;
+}
+
+.vertical-legend rect {
+    stroke: #ffffff;
+}
+
+.legend {
+    position: absolute;
+    left: 0;
+    bottom:0;
+}
+
+.chart-gauge {
+    width: 400px;
+    margin: 100px auto;
+}
+
+.chart-color1 {
+    fill: #e92213;
+}
+
+.chart-color2 {
+    /*fill: #e9621a;*/
+    fill: #dea82c;
+}
+
+.chart-color3 {
+    fill: green;
+}
+
+.needle,
+.needle-center {
+    fill: #464a4f;
+}
+
+
+.bubble circle {
+    stroke: #ffa500;
+    fill: #ffa500;
+}
+
+.domain {
+    stroke: none !important;
+}
+
+.axis line {
+    stroke: none !important;
+}

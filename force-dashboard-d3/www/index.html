@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Salesforce Dashboard</title>
+    <link href="css/ionic.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="left-nav">
+    <div class="welcome">Welcome, Christophe Coenraets</div>
+    <ul class="list">
+        <li class="list-item">
+            <a class="item-content" href="#deals-by-month">
+                <i class="ion-stats-bars"></i>
+                <h3>All Deals by Month</h3>
+                <p>Sales Executive</p>
+            </a>
+        </li>
+        <li class="list-item">
+            <a class="item-content" href="#lead-source">
+                <i class="ion-pie-graph"></i>
+                <h3>Lead Source and Sectors</h3>
+                <p>Marketing Executive</p>
+            </a>
+        </li>
+        <li class="list-item">
+            <a class="item-content" href="#pipeline">
+                <i class="ion-pie-graph"></i>
+                <h3>Pipeline</h3>
+                <p>Sales Executive</p>
+            </a>
+        </li>
+        <li class="list-item">
+            <a class="item-content" href="#top-deals">
+                <i class="ion-connection-bars"></i>
+                <h3>Top Deals</h3>
+                <p>Sales Executive</p>
+            </a>
+        </li>
+        <li class="list-item">
+            <a class="item-content" href="#leader-board">
+                <i class="ion-connection-bars"></i>
+                <h3>Leader Board</h3>
+                <p>Sales Executive</p>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div id="container" class="transition">
+    <header class="bar bar-header nav-bar bar-stable">
+        <button id="btn-menu" class="button button-icon" style="font-size: 22px;"><i class="ion-navicon-round"></i></button>
+        <h1 class="title">Force.com Dashboards</h1>
+    </header>
+    <div id="content"></div>
+</div>
+
+<script src="cordova-2.3.0.js"></script>
+<script src="lib/jquery.js"></script>
+<script src="cordova.force.js"></script>
+<script src="forcetk.mobilesdk.js"></script>
+<script src="lib/d3.v3.min.js"></script>
+<script src="lib/dimple.v1.1.5.min.js"></script>
+<script src="js/gauge.js"></script>
+<script src="lib/accounting.min.js"></script>
+<script src="lib/moment.min.js"></script>
+<script src="lib/fastclick.js"></script>
+
+<!--Uncomment the code below if you want to work with a fake/static version of the data.-->
+<!--<script src="data.js"></script>-->
+
+<script src="js/dataservice.js"></script>
+<script src="js/oauth.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/dashboards/pipeline.js"></script>
+<script src="js/dashboards/deals-by-month.js"></script>
+<script src="js/dashboards/top-deals.js"></script>
+<script src="js/dashboards/leader-board.js"></script>
+<script src="js/dashboards/lead-source.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
